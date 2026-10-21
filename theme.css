@@ -1,0 +1,189 @@
+:root {
+  --bg: #0c0a18;
+  --bg-soft: #151129;
+  --panel: rgba(255, 255, 255, 0.05);
+  --panel-soft: rgba(255, 255, 255, 0.03);
+  --line: rgba(196, 181, 253, 0.16);
+  --line-strong: rgba(196, 181, 253, 0.28);
+  --text: #f5f3ff;
+  --text-soft: #c6bfda;
+  --accent: #8b5cf6;
+  --accent-soft: #c4b5fd;
+  --accent-blue: #7dd3fc;
+  --shadow: 0 18px 40px rgba(5, 5, 16, 0.34);
+  --radius: 26px;
+  --max-width: 1120px;
+  --font-body: "Segoe UI", "Trebuchet MS", sans-serif;
+  --font-heading: Georgia, "Times New Roman", serif;
+}
+
+body {
+  color: var(--text);
+  font-family: var(--font-body);
+  background:
+    radial-gradient(circle at top left, rgba(139, 92, 246, 0.2), transparent 26%),
+    radial-gradient(circle at bottom right, rgba(125, 211, 252, 0.12), transparent 24%),
+    linear-gradient(180deg, #080710 0%, #0d0b1b 50%, #0a0915 100%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  color: var(--text);
+}
+
+.header {
+  background: rgba(10, 9, 21, 0.84);
+  border-bottom: 1px solid var(--line);
+}
+
+.logo {
+  color: var(--text);
+}
+
+.nav-links a {
+  color: var(--text-soft);
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--text);
+}
+
+.menu-toggle {
+  color: var(--text);
+  border: 1px solid var(--line);
+}
+
+.section-kicker,
+.card-label,
+.panel-title,
+.project-tag,
+.detail-title,
+.story-number {
+  color: var(--accent-soft);
+}
+
+.hero-subtext,
+.contact-lead,
+.contact-note p,
+.contact-side p,
+.contact-row span,
+.project-body p,
+.project-copy p,
+.project-panel p,
+.detail-section p,
+.detail-section li,
+.story-content p,
+.glass-card p,
+.home-block p,
+.hero-list li,
+.profile-list span,
+.profile-list strong,
+.trait-list,
+.text-link,
+.project-link,
+.back-link,
+.footer,
+.footer p {
+  color: var(--text-soft);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #d9ccff, #8b5cf6);
+  color: #170f2f;
+}
+
+.btn-secondary {
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.hero-panel,
+.home-block,
+.project-card,
+.contact-note,
+.contact-main,
+.contact-side,
+.profile-panel,
+.project-copy,
+.project-panel,
+.detail-section,
+.glass-card,
+.contact-item {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.03));
+  border-color: var(--line);
+  box-shadow: var(--shadow);
+}
+
+.glass-card:hover,
+.project-card:hover,
+.contact-item:hover,
+.btn-secondary:hover {
+  border-color: var(--line-strong);
+}
+
+.feature-image-link,
+.project-cover,
+.future-cover,
+.project-panel img {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.future-cover {
+  background:
+    linear-gradient(135deg, rgba(139, 92, 246, 0.24), rgba(255, 255, 255, 0.03)),
+    rgba(255, 255, 255, 0.03);
+  color: var(--accent-soft);
+}
+
+.soft-panel,
+.detail-pill {
+  border-color: var(--line);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.story-note {
+  border-left-color: rgba(196, 181, 253, 0.32);
+}
+
+.strength-list span {
+  background: rgba(139, 92, 246, 0.12);
+  border-color: rgba(196, 181, 253, 0.22);
+  color: var(--text);
+}
+
+.contact-row {
+  border-top-color: var(--line);
+}
+
+.contact-row strong,
+.contact-row a,
+.profile-list strong,
+.detail-pill span:last-child,
+.text-link:hover,
+.back-link:hover,
+.project-link:hover {
+  color: var(--text);
+}
+
+.contact-row a:hover,
+.text-link:hover,
+.back-link:hover {
+  color: var(--accent-soft);
+}
+
+.footer {
+  border-top: 1px solid var(--line);
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    background: rgba(10, 9, 21, 0.96);
+    border: 1px solid var(--line);
+  }
+}

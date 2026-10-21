@@ -1,0 +1,15 @@
+/*
+!/*.html
+!/*.css
+!/script.js
+!/assets/
+!/.github/
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/.nojekyll
+/.wrangler/
+/dist/
+**/.env*
+**/Thumbs.db
+**/.DS_Store
